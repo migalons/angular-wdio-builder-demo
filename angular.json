@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-wdio-builder-test": {
+    "my-awesome-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-wdio-builder-test",
+            "outputPath": "dist/my-awesome-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-wdio-builder-test:build"
+            "browserTarget": "my-awesome-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-wdio-builder-test:build:production"
+              "browserTarget": "my-awesome-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-wdio-builder-test:build"
+            "browserTarget": "my-awesome-app:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@migalons/angular-wdio-builder:test",
           "options": {
             "wdioConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-wdio-builder-test:serve"
+            "devServerTarget": "my-awesome-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-wdio-builder-test:serve:production"
+              "devServerTarget": "my-awesome-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-wdio-builder-test"
+  "defaultProject": "my-awesome-app"
 }
