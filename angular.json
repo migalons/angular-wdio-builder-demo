@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "angular-wdio-builder-test": {
@@ -107,9 +107,9 @@
           }
         },
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@migalons/angular-wdio-builder:test",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
+            "wdioConfig": "e2e/protractor.conf.js",
             "devServerTarget": "angular-wdio-builder-test:serve"
           },
           "configurations": {
