@@ -109,12 +109,17 @@
         "e2e": {
           "builder": "@migalons/angular-wdio-builder:test",
           "options": {
-            "wdioConfig": "e2e/protractor.conf.js",
+            "wdioConfig": "e2e/wdio.conf.js",
             "devServerTarget": "my-awesome-app:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "my-awesome-app:serve:production"
+            "custom-config-file": {
+              "wdioConfig": "e2e/custom-wdio.conf.js"
+            },
+            "custom-options": {
+              "wdioOptions": {
+                  "port": 4567
+              }
             }
           }
         }

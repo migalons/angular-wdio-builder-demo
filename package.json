@@ -1,9 +1,9 @@
 {
   "name": "angular-wdio-builder-demo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/migalons/angular-wdio-builder-demogs"
+    "url": "https://github.com/migalons/angular-wdio-builder-demo"
   },
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "e2e:custom-config-file": "npm run e2e -- -c custom-config-file",
+    "e2e:custom-options": "npm run e2e -- -c custom-config-file"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +35,7 @@
     "@angular/cli": "~9.0.5",
     "@angular/compiler-cli": "~9.0.5",
     "@angular/language-service": "~9.0.5",
-    "@migalons/angular-wdio-builder": "^0.1.0",
+    "@migalons/angular-wdio-builder": "^0.2.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",

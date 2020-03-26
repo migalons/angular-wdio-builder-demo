@@ -12,3 +12,7 @@ _This project was generated with [Angular CLI](https://github.com/angular/angula
 - Install dependencies with `npm i`.
 
 - Run `npm run e2e` or `npx ng e2e` to execute the end-to-end tests via [wdio](http://www.webdriver.io/).
+
+- For trying different options with builder parameters, just try to run with `npm run e2e:custom-config-file` or `npm run e2e:custom-options`
+
+_*Note*: Personally, sometimes I had some difficulties trying to install chromedriver npm dependency, because of the binary download. But this is easy to solve following [instructions](https://github.com/giggio/node-chromedriver)_.
