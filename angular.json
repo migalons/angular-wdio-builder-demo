@@ -110,7 +110,7 @@
           "builder": "@migalons/angular-wdio-builder:test",
           "options": {
             "wdioConfig": "e2e/wdio.conf.js",
-            "devServerTarget": "my-awesome-app:serve"
+            "devServerTarget": "my-awesome-app:serve",
           },
           "configurations": {
             "custom-config-file": {
@@ -120,6 +120,12 @@
               "wdioOptions": {
                   "port": 4567
               }
+            },
+            "custom-ng-port": {
+              "wdioOptions": {
+                "wdioConfig": "e2e/custom-ng-port.conf.js"
+              },
+              "port": 2000
             }
           }
         }
